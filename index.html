@@ -1,0 +1,98 @@
+<html>
+
+<head></head>
+
+<body>
+
+
+    <script>
+
+        var isNaN = true;
+
+        var entryName;
+
+        var entrySurName;
+
+        var entryEmail;
+
+        var entryPassword;
+
+
+        var qeydiyyatdanKecib = false;
+
+        while (isNaN == true) {
+            var number = prompt("Proses ucun reqem secin");
+            if (number == 1) {
+
+                var username = prompt("Adinizi daxil edin");
+
+                var surname = prompt("Yoyadinizi daxil edin");
+
+                var email = prompt(" Emailinizi daxil edin");
+
+                var password = prompt("Sifrenizi daxil edin");
+
+
+                entryName = username;
+
+                entrySurName = surname;
+
+                entryEmail = email;
+
+                entryPassword = password;
+
+
+                var qeydiyyatdanKecib = true;
+
+                alert(username = " " + "Qeydiyyatdan kecdiniz")
+            }
+
+            else if (number == 2) {
+                if (qeydiyyatdanKecib == false) {
+                    alert("Once qeydiyyatdan kecin")
+                }
+                else {
+                    var email = prompt("email daxil edin");
+                    var password = prompt("sifreni daxil edin");
+
+                    if (email == entryEmail && password == entryPassword) {
+                        alert("Daxil oldunuz")
+                    }
+                    else {
+                        alert(" sifre ve ya email yanlisdir")
+                    }
+                }
+            }
+
+
+
+            else if (number == 3) {
+                if (qeydiyyatdanKecib == false) {
+                    alert("once qeydiyyatdan kecin")
+                }
+                else {
+                    var newuserName = prompt ( "Adinizi daxil edin");
+                    var newSurname = prompt ( "Soyadinizi daxil edin");
+                    var newEmail = prompt ( "Emailinizi daxil edin");
+                    var newPassword = prompt ( "Sifrenizi daxil edin");
+
+                   entryName = newuserName;
+                   entrySurName = newSurname;
+                   entryEmail = newEmail;
+                   entryPassword =entryPassword;
+                
+                }
+
+
+            }
+
+            else if (number == 4 ){
+                alert ( "cixis");
+                isNaN = false;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
